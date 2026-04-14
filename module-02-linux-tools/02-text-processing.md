@@ -147,7 +147,8 @@ grep -w "the" file.txt  # 匹配 "the" 但不匹配 "there"
 # 在代码中查找 TODO 注释
 grep -rn "TODO" src/
 
-# 查找所有 Python 文件中的 import
+# 查找行首的 import 语句
+# Python 有两种 import 写法：import xxx 和 from xxx import yyy
 grep "^import\|^from" *.py
 
 # 统计错误数量
