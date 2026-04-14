@@ -278,7 +278,7 @@ grep -c "ERROR" test.log
 # 4. 查看错误前后上下文
 grep -C 1 "ERROR" test.log
 
-# 5. 只看最后发生的错误
+# 5. 查看最后 20 行中的错误（日志太大时避免全量搜索）
 tail -n 20 test.log | grep "ERROR"
 ```
 
