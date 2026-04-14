@@ -290,7 +290,7 @@ tail -n 20 test.log | grep "ERROR"
 # 1. 查找所有 TODO 注释
 grep -rn "TODO" .
 
-# 2. 查找所有函数定义（Python）
+# 2. 查找行首的函数定义（顶层函数）
 grep -n "^def " *.py
 
 # 3. 统计代码行数
