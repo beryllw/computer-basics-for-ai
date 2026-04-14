@@ -111,8 +111,9 @@ ls *.py
 # 列出所有以 test 开头的文件
 ls test*
 
-# 复制所有图片到 backup 目录
-cp *.jpg *.png backup/
+# 复制常见图片格式到 backup 目录
+# 可根据需要添加更多格式（如 .bmp, .webp 等）
+cp *.jpg *.jpeg *.png *.gif backup/
 
 # 删除所有临时文件
 rm *.tmp *~
