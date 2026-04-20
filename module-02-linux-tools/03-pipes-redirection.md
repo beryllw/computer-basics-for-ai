@@ -119,10 +119,10 @@ ls -la > file_list.txt
 invalid_command 2> error.log
 
 # 保存所有输出
-command &> output.log
+cmd &> output.log
 
 # 丢弃输出（发送到黑洞）
-command > /dev/null 2>&1
+cmd > /dev/null 2>&1
 ```
 
 ### 输入重定向
@@ -154,21 +154,21 @@ cat < file1.txt < file2.txt
 
 ```bash
 # 只保存正确输出
-command > output.txt
+cmd > output.txt
 
 # 只保存错误
-command 2> error.txt
+cmd 2> error.txt
 
 # 保存所有输出
-command > all.txt 2>&1
+cmd > all.txt 2>&1
 # 或简写（bash 4+）
-command &> all.txt
+cmd &> all.txt
 
 # 丢弃所有输出
-command > /dev/null 2>&1
+cmd > /dev/null 2>&1
 
 # 错误合并到正确输出
-command 2>&1 | grep "pattern"
+cmd 2>&1 | grep "pattern"
 ```
 
 ### /dev/null 是什么？
@@ -182,7 +182,7 @@ command 2>&1 | grep "pattern"
 - 静音运行
 
 例子：
-command > /dev/null 2>&1  # 完全静音
+cmd > /dev/null 2>&1  # 完全静音
 ```
 
 ---
