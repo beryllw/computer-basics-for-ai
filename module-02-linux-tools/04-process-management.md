@@ -196,7 +196,8 @@ kill %1
 # 解决：使用 nohup
 nohup python3 app.py &
 
-# 输出会保存到 nohup.out
+# nohup 的输出自动保存到 nohup.out（当前目录）
+# 用 cat 查看文件内容
 cat nohup.out
 
 # 或者重定向输出
