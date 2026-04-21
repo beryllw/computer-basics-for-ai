@@ -96,7 +96,7 @@ command1 | tee /dev/stderr | command2
 
 | 符号 | 作用 | 例子 |
 |------|------|------|
-| `>` | 覆盖输出到文件 | `echo "hi" > file.txt` |
+| `\>` | 覆盖输出到文件 | `echo "hi" > file.txt` |
 | `>>` | 追加输出到文件 | `echo "hi" >> file.txt` |
 | `2>` | 重定向错误输出 | `cmd 2> error.log` |
 | `&>` | 重定向所有输出 | `cmd &> all.log` |
