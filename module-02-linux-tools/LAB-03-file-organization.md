@@ -63,6 +63,7 @@ ls -la
 # 文档
 mv *.pdf documents/
 mv *.txt documents/
+mv *.csv documents/
 
 # 图片
 mv *.jpg *.png *.gif images/
