@@ -122,7 +122,7 @@ for dir in documents images archives installers code misc; do
     echo "生成时间：$(date)" >> $dir/INDEX.txt
     echo "" >> $dir/INDEX.txt
     echo "文件列表：" >> $dir/INDEX.txt
-    ls -lh $dir/ | tail -n +4 >> $dir/INDEX.txt
+    ls -lh $dir/ | grep -v '^total' | grep -v '^\.' >> $dir/INDEX.txt
 done
 
 # 查看索引
