@@ -119,7 +119,7 @@ grep -C 2 "ERROR" app.log
 # 2. 查看特定时间的日志
 echo ""
 echo "=== 08:02 的日志 ==="
-grep "08:02" app.log
+grep " 08:02:" app.log
 
 # 3. 查看第一个和最后一个日志
 echo ""
