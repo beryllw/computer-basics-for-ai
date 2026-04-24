@@ -266,7 +266,7 @@ echo "开始监控：$LOG_FILE"
 echo "按 Ctrl+C 停止"
 echo ""
 
-tail -f $LOG_FILE | while read line; do
+tail -n 0 -f $LOG_FILE | while read line; do
     if echo "$line" | grep -q "ERROR"; then
         echo "⚠️  [ERROR DETECTED] $(date '+%H:%M:%S')"
         echo "   $line"
