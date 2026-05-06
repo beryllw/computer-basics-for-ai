@@ -135,13 +135,16 @@ Content-Length: 1234
 |--------|------|------|
 | **200** | OK | 请求成功 |
 | **201** | Created | 资源创建成功 |
+| **204** | No Content | 请求成功，无返回内容 |
 | **301** | Moved Permanently | 永久重定向 |
 | **302** | Found | 临时重定向 |
+| **304** | Not Modified | 资源未修改，使用缓存 |
 | **400** | Bad Request | 请求格式错误 |
 | **401** | Unauthorized | 未授权 |
 | **403** | Forbidden | 禁止访问 |
 | **404** | Not Found | 资源不存在 |
 | **500** | Internal Server Error | 服务器错误 |
+| **502** | Bad Gateway | 网关错误（上游服务不可用） |
 | **503** | Service Unavailable | 服务不可用 |
 
 ### 状态码分类
