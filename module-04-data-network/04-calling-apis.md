@@ -56,16 +56,24 @@
 ### 安装 requests 库
 
 ```bash
-pip install requests
+python3 -m pip install requests
 ```
 
 ### 测试连接
+
+新建文件 `test_connection.py`，写入以下内容：
 
 ```python
 import requests
 
 response = requests.get("https://httpbin.org/get")
 print(response.status_code)  # 应该是 200
+```
+
+运行：
+
+```bash
+python3 test_connection.py
 ```
 
 ---
