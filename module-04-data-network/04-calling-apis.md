@@ -109,13 +109,13 @@ import requests
 
 # 获取第一页用户
 url = "https://jsonplaceholder.typicode.com/users"
-params = {"page": 1}
+params = {"page": 1, "_limit": 3}
 
 response = requests.get(url, params=params)
 users = response.json()
 
 # 打印用户信息
-for user in users[:3]:
+for user in users:
     print(f"Name: {user['name']}")
     print(f"Email: {user['email']}")
     print(f"City: {user['address']['city']}")
@@ -123,18 +123,19 @@ for user in users[:3]:
 ```
 
 **响应示例**：
-```json
-[
-  {
-    "id": 1,
-    "name": "Leanne Graham",
-    "email": "Sincere@april.biz",
-    "address": {
-      "city": "Gwenborough"
-    }
-  },
-  ...
-]
+```
+Name: Leanne Graham
+Email: Sincere@april.biz
+City: Gwenborough
+---
+Name: Ervin Howell
+Email: Shanna@melissa.tv
+City: Wisokyburgh
+---
+Name: Clementine Bauch
+Email: Nathan@yesenia.net
+City: McKenziehaven
+---
 ```
 
 ---
